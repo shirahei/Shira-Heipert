@@ -4,9 +4,19 @@
     <title>
         Contact us
     </title>
+<style>
+    footer{
+        background-color: rgb(210, 205, 205);
+        padding: 10px;
+        text-align: center;
+        color: white; 
+    }
+</style>
+</head>
+
 <body>
-<h1 style="background-color: bisque; color:brown; font-size: 50px; text-align: center;">Contact us</h1>
-<form style="text-align: center; border:3px solid rgb(149, 77, 77); margin:auto; width:620px; background:bisque; padding: 80px; ">
+<div> <h1 style="background-color: bisque; color:brown; font-size: 50px; text-align: center;">Contact us</h1> </div>
+<form style="text-align: center; display:block; border:3px solid rgb(149, 77, 77); margin:auto; width:620px; background:bisque; padding: 80px; ">
    <b><label for="FirstName">First Name:</label></b> 
     <input type="text" id="FirstName" name="FirstName">
  <b><label for="LastName">Last Name:</label></b> 
@@ -18,14 +28,19 @@
     <label for="female">Female</label><br>
     <input type="radio" id="other" name="gender">
     <label for="other">Other</label><br><br>
+    <b><label for="age">Age:</label></b>
+    <input type="number" name="age" id="age" min="1" max="200" step="1"><br><br>
     <b><label for="email">Email:</label></b>
     <input type="email" id="email" name="email"><br><br>
     <b><label for="phone">Phone:</label></b>
     <input type="tel" id="phone" name="phone"><br><br><br>
     <b><label for="comment">leave a comment:</label></b><br>
     <textarea id="comment" name="comment" cols="30" rows="3"></textarea><br>
+    <button type="reset">Reset</button>
     <input type="submit"><br>
 </form>
 </body>
-</head>
+
+<footer><p>mail to:<br> <a href="mailto:shirahei@pust.bgu.ac.il"> shirahei@pust.bgu.ac.il</a> </p></footer> 
+
 </html>
